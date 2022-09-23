@@ -65,7 +65,8 @@ export default defineComponent({
         };
     },
     created() {
-        this.palestraId = parseInt(this.$route.params.id[0]);
+        this.palestraId = parseInt(this.$route.params.id.toString());
+        console.log(this.palestraId)
         this.item[0] = this.palestras.find((e) => e.id == this.palestraId) as IPalestra;
     },
     setup() {
