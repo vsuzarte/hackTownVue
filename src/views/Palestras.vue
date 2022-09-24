@@ -1,4 +1,5 @@
 <template>
+  <RouterLink to="/" id="voltarTabela"> <i class="fa-solid fa-house"></i> Voltar</RouterLink>
   <Cabecalho titulo="Palestras">
     <table class="table table-hover table-light">
       <thead>
@@ -26,9 +27,7 @@ import { defineComponent } from 'vue';
 import { useStore } from 'vuex';
 import { key } from '@/store';
 import { computed } from '@vue/reactivity';
-
 import Cabecalho from '../components/Cabecalho.vue';
-
 export default defineComponent({
   name: "Palestras",
   components: { Cabecalho },
@@ -48,16 +47,20 @@ export default defineComponent({
 
 <style scoped>
 
-  .first-t{
+#voltarTabela{
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.first-t{
       border-right: 1px solid black;
       text-align: center;
   }
-
   table{
     border: 1px solid black;
     text-align: justify;
   }
-
   thead{
     border: 2px solid black;
     font-size: 1.4em;

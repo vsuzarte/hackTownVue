@@ -3,9 +3,11 @@
     <img src="../assets/ideia.webp" alt="Girl in a jacket" id="ideiahack" />
     <img src="../assets/ecalc_logo_inv.png" alt="Girl in a jacket" id="ecalchack" />
     <div class="CV-page">
-        <h1 class="CV-primaryHeading">
-            <span class="CV-primaryHeading-name">{{titulo}}</span>
-        </h1>
+        <div id="tituloh1">
+            <h1 class="CV-primaryHeading">
+                <span class="CV-primaryHeading-name">{{titulo}}</span>
+            </h1>
+        </div>
         <hr />
         <slot></slot>
     </div>
@@ -27,5 +29,10 @@ export default defineComponent({
 </script>
 
 <style>
-
+    #tituloh1{
+        background: rgba(0,0,0,0.5);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 </style>

@@ -1,4 +1,5 @@
 <template>
+    <RouterLink to="/palestras" id="voltarTabela"> <i class="fa-solid fa-house"></i> Voltar</RouterLink>
     <Cabecalho :titulo="item[0].nome">
         <div class="CV-details">
             <a :href="item[0].link" target="_blank">
@@ -83,6 +84,12 @@ export default defineComponent({
 
 <style scoped>
     
+#voltarTabela{
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
 .div-detail {
     background-color: white;
 }
