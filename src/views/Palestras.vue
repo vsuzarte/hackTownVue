@@ -1,6 +1,7 @@
 <template>
   <RouterLink to="/" id="voltarTabela"> <i class="fa-solid fa-house"></i> Voltar</RouterLink>
   <Cabecalho titulo="Palestras">
+    <p> Clique na linha para mais informações sobre a palestra</p>
     <table class="table table-hover table-light">
       <thead>
         <tr>
