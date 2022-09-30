@@ -17,7 +17,7 @@
             <a v-if="item[0].link3 != ''" :href="item[0].link3" target="_blank">
                 <div class="CV-detail-key" style="color: white;">
                     <i class="fa-brands fa-youtube"></i>
-                    Video 2
+                    Video 3
                 </div>
             </a>
         </div>
